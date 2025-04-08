@@ -45,8 +45,6 @@
 	<string>2.0</string>
 	<key>CFBundleVersion</key>
 	<string>2.0.0</string>
-	<key>LSMinimumSystemVersion</key>
-	<string>10.15</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2024 Craig Schamp. All rights reserved.</string>
 	<key>NSMainNibFile</key>

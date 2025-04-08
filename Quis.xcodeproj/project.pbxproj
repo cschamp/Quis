@@ -16,8 +16,6 @@
 		AA38B8F0072C1DA5003E4FBA /* WordListEditor.nib in Resources */ = {isa = PBXBuildFile; fileRef = AA38B8EE072C1DA5003E4FBA /* WordListEditor.nib */; };
 		AA3955790718DFC30008C8EA /* Histogram.h in Resources */ = {isa = PBXBuildFile; fileRef = AA3955770718DFC30008C8EA /* Histogram.h */; };
 		AA39557A0718DFC30008C8EA /* Histogram.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3955780718DFC30008C8EA /* Histogram.m */; };
-		AA3956660718F4490008C8EA /* AGRegex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3956650718F4490008C8EA /* AGRegex.framework */; };
-		AA3956790718F5E90008C8EA /* AGRegex.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA3956650718F4490008C8EA /* AGRegex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		AA4942ED0728980E0044BE05 /* ResultsWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = AA4942EB0728980E0044BE05 /* ResultsWindow.nib */; };
 		AA494312072898990044BE05 /* ResultsWindow.h in Resources */ = {isa = PBXBuildFile; fileRef = AA494310072898990044BE05 /* ResultsWindow.h */; };
 		AA494313072898990044BE05 /* ResultsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AA494311072898990044BE05 /* ResultsWindow.m */; };
@@ -42,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AA3956790718F5E90008C8EA /* AGRegex.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				AA3956660718F4490008C8EA /* AGRegex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +372,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -432,7 +427,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dog-star.Quis";
@@ -443,9 +437,10 @@
 		AA7C2E0C08587F4D00807105 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CURRENT_PROJECT_VERSION = 21;
 				DEAD_CODE_STRIPPING = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)";
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"/Users/chs/Documents/SJSU/History-230 - Frauds and Forgeries/Research/Stats/seneca/src/Quis\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -455,7 +450,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dog-star.Quis";
 				PRODUCT_NAME = Quis;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -576,12 +570,12 @@
 		AACBBCCB2DA57D350018C794 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dog-star.Quis";
 				PRODUCT_NAME = Quis;
 			};
@@ -590,11 +584,11 @@
 		AACBBCCC2DA57D350018C794 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dog-star.Quis";
 				PRODUCT_NAME = Quis;
 			};
