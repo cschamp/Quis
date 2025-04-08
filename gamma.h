@@ -13,5 +13,5 @@
 
 extern double gammq(double a, double x);
 extern double gammln(double xx);
-extern void gcf(double *gammcf, double a, double x, double *gln);
-extern double gser(double *gamser, double a, double x, double *gln);
+// extern void gcf(double *gammcf, double a, double x, double *gln);
+// extern double gser(double *gamser, double a, double x, double *gln);
