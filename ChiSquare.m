@@ -6,6 +6,8 @@
 //  Copyright 2004 Craig Schamp. All rights reserved.
 //  $Id: ChiSquare.m,v 1.9 2004/11/01 05:00:01 chs Exp $
 //
+//  Modified by Craig Schamp on 4/8/2025 for modern macOS
+//
 
 #import "ChiSquare.h"
 #import <math.h>
@@ -13,23 +15,15 @@
 
 @implementation ChiSquare
 
-- (void) dealloc
-{
-	[_setS release];
-	[_setR release];
-	[_allKeys release];
-	[super dealloc];
-}
-
 - (id) initWithSet:(Histogram *)S andSet:(Histogram*)R
 {
 	if (self = [super init]) {	
-		_setS = [S retain];
-		_setR = [R retain];
+		_setS = S;
+		_setR = R;
 		NSMutableDictionary *concordance = [NSMutableDictionary dictionaryWithCapacity:([_setS count] + [_setR count])];
 		[concordance setDictionary:[_setR dictionary]];
 		[concordance addEntriesFromDictionary:[_setS dictionary]];
-		_allKeys = [[concordance allKeys] retain];
+		_allKeys = [concordance allKeys];
 		_rootSoverR = sqrt((double) [_setS summationIntValue] / [_setR summationIntValue]);
 		_rootRoverS = sqrt((double) [_setR summationIntValue] / [_setS summationIntValue]);
 	}
@@ -46,7 +40,7 @@
 	return _probability;
 }
 
-- (int) degreesOfFreedom
+- (NSInteger) degreesOfFreedom
 {
 	return _degreesOfFreedom;
 }

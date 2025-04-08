@@ -3,18 +3,14 @@
 //  Quis
 //
 //  Created by Craig Schamp on 10/9/04.
-//  Updated for modern macOS on 2024
+//  Updated for modern macOS on 4/8/2025
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Histogram : NSObject {
-	NSMutableDictionary *_lexicon;	// list of each distinct word and frequency
-	NSArray *_wordList;				// list of each distinct word
-	int _sum;						// total of words in fiel at _filePath
-}
+@interface Histogram : NSObject
 
 - (void)histogramFromFileList:(NSArray<NSString *> *)fileList withConflation:(BOOL)conflationOption;
 - (void) processWord:(NSString *)word;

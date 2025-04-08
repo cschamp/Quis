@@ -6,6 +6,8 @@
 //  Copyright 2004 Craig Schamp. All rights reserved.
 //  $Id: Aliases.m,v 1.3 2004/10/28 01:38:13 chs Exp $
 //
+//  Modified by Craig Schamp on 4/8/2025 for modern macOS
+//
 
 #import "Aliases.h"
 
@@ -22,7 +24,7 @@
 	_aliasDictionary = nil;
 	if (self = [super init]) {
 		if (filePath)
-			_aliasDictionary = [[NSMutableDictionary dictionaryWithContentsOfFile:filePath] retain];	// XXX retain???
+			_aliasDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];	// XXX retain???
 			// The values in the dictionary form the list of aliases. Create
 			// an array of aliases, containing only one instance of each alias.
 			NSEnumerator *aliasEnumerator = [[_aliasDictionary allValues] objectEnumerator];
@@ -37,15 +39,9 @@
 					[aliasValues setValue:newValue forKey:alias];
 				}
 			}
-			_allAliases = [[aliasValues allKeys] retain];
+			_allAliases = [aliasValues allKeys];
 	}
 	return self;
-}
-
--(void) dealloc
-{
-	[_aliasDictionary release];		_aliasDictionary = nil;
-	[super dealloc];
 }
 
 -(BOOL)writeToFile:(NSString *)file atomically:(BOOL)flag

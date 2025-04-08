@@ -12,7 +12,7 @@
 
 @interface Aliases : NSObject {
 	NSMutableDictionary *_aliasDictionary;	// use word as index, and get its alias
-	NSMutableArray *_allAliases;			// inverse: all aliases (values) in dictionary
+	NSArray *_allAliases;			// inverse: all aliases (values) in dictionary
 }
 
 -(id)initWithContentsOfFile:(NSString *)filePath;

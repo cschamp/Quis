@@ -6,6 +6,8 @@
 //  Copyright 2004 Craig Schamp. All rights reserved.
 //  $Id: ChiSquare.h,v 1.5 2004/11/01 05:00:01 chs Exp $
 //
+//  Modified by Craig Schamp on 4/8/2025 for modern macOS
+//
 
 #import <Cocoa/Cocoa.h>
 #import "Histogram.h"
@@ -18,7 +20,7 @@
 	double _rootSoverR;
 	double _rootRoverS;
 	double _computation;
-	int _degreesOfFreedom;
+	NSInteger _degreesOfFreedom;
 	double _probability;	// chi-square probability function
 }
 
@@ -26,6 +28,6 @@
 - (void) calculateWithOptions:(BOOL)compressionOption;
 - (double) value;
 - (double) probability;
-- (int) degreesOfFreedom;
+- (NSInteger) degreesOfFreedom;
 
 @end
