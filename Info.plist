@@ -36,7 +36,7 @@
 	<key>CFBundleIconFile</key>
 	<string>Q.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.dog-star.Quis</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
