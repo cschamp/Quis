@@ -1,0 +1,1 @@
+ const unsigned char QuisVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Quis  PROJECT:Quis21-21  DEVELOPER:chs  BUILT:" __DATE__  " " __TIME__ "" "\n"; const double QuisVersionNumber __attribute__ ((used)) = (double)21.;
