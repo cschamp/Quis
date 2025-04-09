@@ -38,7 +38,6 @@
 		AAC295842DA6233F00F3F8E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAC295852DA6233F00F3F8E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AAC295862DA6233F00F3F8E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AAC295872DA6233F00F3F8E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MainMenu.xib; sourceTree = "<group>"; };
 		AAC2958A2DA6233F00F3F8E8 /* chisquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chisquare.png; sourceTree = "<group>"; };
 		AAC2958B2DA6233F00F3F8E8 /* ChiSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChiSquare.h; sourceTree = "<group>"; };
 		AAC2958C2DA6233F00F3F8E8 /* ChiSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChiSquare.m; sourceTree = "<group>"; };
@@ -125,7 +124,6 @@
 				AA52B25F2DA71FA300CFFAD8 /* QuisMain.xib */,
 				AA52B2602DA71FA300CFFAD8 /* ResultsWindow.xib */,
 				AA52B2612DA71FA300CFFAD8 /* WordListEditor.xib */,
-				AAC295882DA6233F00F3F8E8 /* MainMenu.xib */,
 			);
 			path = Base.lproj;
 			sourceTree = "<group>";
@@ -259,14 +257,6 @@
 				AA52B2622DA71FA300CFFAD8 /* Base */,
 			);
 			name = WordListEditor.xib;
-			sourceTree = "<group>";
-		};
-		AAC295882DA6233F00F3F8E8 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAC295872DA6233F00F3F8E8 /* Base */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -14,10 +14,14 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+- (void)applicationDidFinishLaunching:(NSNotification *)notification {
+    BOOL success = [[NSBundle mainBundle] loadNibNamed:@"QuisMain" owner:NSApp topLevelObjects:nil];
+    if (!success) {
+        NSLog(@"Failed to load QuisMain.xib");
+    } else {
+        NSLog(@"Successfully loaded QuisMain.xib");
+    }
 }
-
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
