@@ -15,15 +15,9 @@
 		AAC295B42DA6233F00F3F8E8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295882DA6233F00F3F8E8 /* MainMenu.xib */; };
 		AAC295B52DA6233F00F3F8E8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAC295A02DA6233F00F3F8E8 /* Info.plist */; };
 		AAC295B62DA6233F00F3F8E8 /* Q.icns in Resources */ = {isa = PBXBuildFile; fileRef = AAC295A22DA6233F00F3F8E8 /* Q.icns */; };
-		AAC295B72DA6233F00F3F8E8 /* WordListEditor.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295982DA6233F00F3F8E8 /* WordListEditor.nib */; };
-		AAC295B82DA6233F00F3F8E8 /* QuisMain~.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295922DA6233F00F3F8E8 /* QuisMain~.nib */; };
-		AAC295B92DA6233F00F3F8E8 /* QuisMain.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295902DA6233F00F3F8E8 /* QuisMain.nib */; };
 		AAC295BA2DA6233F00F3F8E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAC2958E2DA6233F00F3F8E8 /* InfoPlist.strings */; };
-		AAC295BB2DA6233F00F3F8E8 /* ResultsWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295942DA6233F00F3F8E8 /* ResultsWindow.nib */; };
 		AAC295BC2DA6233F00F3F8E8 /* chisquare.png in Resources */ = {isa = PBXBuildFile; fileRef = AAC2958A2DA6233F00F3F8E8 /* chisquare.png */; };
-		AAC295BD2DA6233F00F3F8E8 /* WordListEditor~.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC2959A2DA6233F00F3F8E8 /* WordListEditor~.nib */; };
 		AAC295BE2DA6233F00F3F8E8 /* version.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAC295A92DA6233F00F3F8E8 /* version.plist */; };
-		AAC295BF2DA6233F00F3F8E8 /* ResultsWindow~.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295962DA6233F00F3F8E8 /* ResultsWindow~.nib */; };
 		AAC295C02DA6233F00F3F8E8 /* ChiSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2958C2DA6233F00F3F8E8 /* ChiSquare.m */; };
 		AAC295C12DA6233F00F3F8E8 /* WordListEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC295AB2DA6233F00F3F8E8 /* WordListEditor.m */; };
 		AAC295C22DA6233F00F3F8E8 /* WordTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC295AF2DA6233F00F3F8E8 /* WordTableView.m */; };
@@ -51,12 +45,6 @@
 		AAC2958B2DA6233F00F3F8E8 /* ChiSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChiSquare.h; sourceTree = "<group>"; };
 		AAC2958C2DA6233F00F3F8E8 /* ChiSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChiSquare.m; sourceTree = "<group>"; };
 		AAC2958D2DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
-		AAC2958F2DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = QuisMain.nib; sourceTree = "<group>"; };
-		AAC295912DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = "QuisMain~.nib"; sourceTree = "<group>"; };
-		AAC295932DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = ResultsWindow.nib; sourceTree = "<group>"; };
-		AAC295952DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = "ResultsWindow~.nib"; sourceTree = "<group>"; };
-		AAC295972DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = WordListEditor.nib; sourceTree = "<group>"; };
-		AAC295992DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = "WordListEditor~.nib"; sourceTree = "<group>"; };
 		AAC2959C2DA6233F00F3F8E8 /* gamma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamma.h; sourceTree = "<group>"; };
 		AAC2959D2DA6233F00F3F8E8 /* gamma.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gamma.c; sourceTree = "<group>"; };
 		AAC2959E2DA6233F00F3F8E8 /* Histogram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Histogram.h; sourceTree = "<group>"; };
@@ -150,12 +138,6 @@
 				AA52B2572DA6CDB500CFFAD8 /* ResultsWindow.xib */,
 				AA52B2582DA6CDB500CFFAD8 /* WordListEditor.xib */,
 				AAC2958E2DA6233F00F3F8E8 /* InfoPlist.strings */,
-				AAC295902DA6233F00F3F8E8 /* QuisMain.nib */,
-				AAC295922DA6233F00F3F8E8 /* QuisMain~.nib */,
-				AAC295942DA6233F00F3F8E8 /* ResultsWindow.nib */,
-				AAC295962DA6233F00F3F8E8 /* ResultsWindow~.nib */,
-				AAC295982DA6233F00F3F8E8 /* WordListEditor.nib */,
-				AAC2959A2DA6233F00F3F8E8 /* WordListEditor~.nib */,
 			);
 			path = English.lproj;
 			sourceTree = "<group>";
@@ -237,18 +219,12 @@
 				AAC295B42DA6233F00F3F8E8 /* MainMenu.xib in Resources */,
 				AAC295B52DA6233F00F3F8E8 /* Info.plist in Resources */,
 				AAC295B62DA6233F00F3F8E8 /* Q.icns in Resources */,
-				AAC295B72DA6233F00F3F8E8 /* WordListEditor.nib in Resources */,
-				AAC295B82DA6233F00F3F8E8 /* QuisMain~.nib in Resources */,
-				AAC295B92DA6233F00F3F8E8 /* QuisMain.nib in Resources */,
 				AAC295BA2DA6233F00F3F8E8 /* InfoPlist.strings in Resources */,
 				AA52B25C2DA6CDB500CFFAD8 /* WordListEditor.xib in Resources */,
 				AA52B25D2DA6CDB500CFFAD8 /* ResultsWindow.xib in Resources */,
 				AA52B25E2DA6CDB500CFFAD8 /* QuisMain.xib in Resources */,
-				AAC295BB2DA6233F00F3F8E8 /* ResultsWindow.nib in Resources */,
 				AAC295BC2DA6233F00F3F8E8 /* chisquare.png in Resources */,
-				AAC295BD2DA6233F00F3F8E8 /* WordListEditor~.nib in Resources */,
 				AAC295BE2DA6233F00F3F8E8 /* version.plist in Resources */,
-				AAC295BF2DA6233F00F3F8E8 /* ResultsWindow~.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,54 +289,6 @@
 				AAC2958D2DA6233F00F3F8E8 /* English */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AAC295902DA6233F00F3F8E8 /* QuisMain.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAC2958F2DA6233F00F3F8E8 /* English */,
-			);
-			name = QuisMain.nib;
-			sourceTree = "<group>";
-		};
-		AAC295922DA6233F00F3F8E8 /* QuisMain~.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAC295912DA6233F00F3F8E8 /* English */,
-			);
-			name = "QuisMain~.nib";
-			sourceTree = "<group>";
-		};
-		AAC295942DA6233F00F3F8E8 /* ResultsWindow.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAC295932DA6233F00F3F8E8 /* English */,
-			);
-			name = ResultsWindow.nib;
-			sourceTree = "<group>";
-		};
-		AAC295962DA6233F00F3F8E8 /* ResultsWindow~.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAC295952DA6233F00F3F8E8 /* English */,
-			);
-			name = "ResultsWindow~.nib";
-			sourceTree = "<group>";
-		};
-		AAC295982DA6233F00F3F8E8 /* WordListEditor.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAC295972DA6233F00F3F8E8 /* English */,
-			);
-			name = WordListEditor.nib;
-			sourceTree = "<group>";
-		};
-		AAC2959A2DA6233F00F3F8E8 /* WordListEditor~.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAC295992DA6233F00F3F8E8 /* English */,
-			);
-			name = "WordListEditor~.nib";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
