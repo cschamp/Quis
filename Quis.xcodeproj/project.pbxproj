@@ -3,317 +3,341 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D11072A0486CEB800E47090 /* QuisMain.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* QuisMain.nib */; };
-		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
-		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		AA28A41B072C6AD2009D4E53 /* Aliases.h in Resources */ = {isa = PBXBuildFile; fileRef = AA28A419072C6AD2009D4E53 /* Aliases.h */; };
-		AA28A41C072C6AD2009D4E53 /* Aliases.m in Sources */ = {isa = PBXBuildFile; fileRef = AA28A41A072C6AD2009D4E53 /* Aliases.m */; };
-		AA38B8F0072C1DA5003E4FBA /* WordListEditor.nib in Resources */ = {isa = PBXBuildFile; fileRef = AA38B8EE072C1DA5003E4FBA /* WordListEditor.nib */; };
-		AA3955790718DFC30008C8EA /* Histogram.h in Resources */ = {isa = PBXBuildFile; fileRef = AA3955770718DFC30008C8EA /* Histogram.h */; };
-		AA39557A0718DFC30008C8EA /* Histogram.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3955780718DFC30008C8EA /* Histogram.m */; };
-		AA4942ED0728980E0044BE05 /* ResultsWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = AA4942EB0728980E0044BE05 /* ResultsWindow.nib */; };
-		AA494312072898990044BE05 /* ResultsWindow.h in Resources */ = {isa = PBXBuildFile; fileRef = AA494310072898990044BE05 /* ResultsWindow.h */; };
-		AA494313072898990044BE05 /* ResultsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AA494311072898990044BE05 /* ResultsWindow.m */; };
-		AA6BC5930721C16400589F95 /* WordTableController.h in Resources */ = {isa = PBXBuildFile; fileRef = AA6BC5910721C16400589F95 /* WordTableController.h */; };
-		AA6BC5940721C16400589F95 /* WordTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6BC5920721C16400589F95 /* WordTableController.m */; };
-		AA88F49D071CF64000157C71 /* Q.icns in Resources */ = {isa = PBXBuildFile; fileRef = AA88F49C071CF64000157C71 /* Q.icns */; };
-		AA8AD467071D71AF00383E03 /* chisquare.png in Resources */ = {isa = PBXBuildFile; fileRef = AA8AD466071D71AF00383E03 /* chisquare.png */; };
-		AA8DA8580741BEC300733DE3 /* WordTableView.h in Resources */ = {isa = PBXBuildFile; fileRef = AA8DA8560741BEC300733DE3 /* WordTableView.h */; };
-		AA8DA8590741BEC300733DE3 /* WordTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8DA8570741BEC300733DE3 /* WordTableView.m */; };
-		AA94BD3E071C0EF500570F02 /* gamma.h in Resources */ = {isa = PBXBuildFile; fileRef = AA94BD3C071C0EF500570F02 /* gamma.h */; };
-		AA94BD3F071C0EF500570F02 /* gamma.c in Sources */ = {isa = PBXBuildFile; fileRef = AA94BD3D071C0EF500570F02 /* gamma.c */; };
-		AA9FAAE0071A3E5E008C6B53 /* ChiSquare.h in Resources */ = {isa = PBXBuildFile; fileRef = AA9FAADE071A3E5E008C6B53 /* ChiSquare.h */; };
-		AA9FAAE1071A3E5E008C6B53 /* ChiSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9FAADF071A3E5E008C6B53 /* ChiSquare.m */; };
-		AACB6778072C20D800C4DEF6 /* WordListEditor.h in Resources */ = {isa = PBXBuildFile; fileRef = AACB6776072C20D800C4DEF6 /* WordListEditor.h */; };
-		AACB6779072C20D800C4DEF6 /* WordListEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = AACB6777072C20D800C4DEF6 /* WordListEditor.m */; };
+		AAC295B22DA6233F00F3F8E8 /* SampleWordList.stem in Resources */ = {isa = PBXBuildFile; fileRef = AAC295A82DA6233F00F3F8E8 /* SampleWordList.stem */; };
+		AAC295B32DA6233F00F3F8E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC295862DA6233F00F3F8E8 /* Assets.xcassets */; };
+		AAC295B42DA6233F00F3F8E8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295882DA6233F00F3F8E8 /* MainMenu.xib */; };
+		AAC295B52DA6233F00F3F8E8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAC295A02DA6233F00F3F8E8 /* Info.plist */; };
+		AAC295B62DA6233F00F3F8E8 /* Q.icns in Resources */ = {isa = PBXBuildFile; fileRef = AAC295A22DA6233F00F3F8E8 /* Q.icns */; };
+		AAC295B72DA6233F00F3F8E8 /* WordListEditor.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295982DA6233F00F3F8E8 /* WordListEditor.nib */; };
+		AAC295B82DA6233F00F3F8E8 /* QuisMain~.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295922DA6233F00F3F8E8 /* QuisMain~.nib */; };
+		AAC295B92DA6233F00F3F8E8 /* QuisMain.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295902DA6233F00F3F8E8 /* QuisMain.nib */; };
+		AAC295BA2DA6233F00F3F8E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAC2958E2DA6233F00F3F8E8 /* InfoPlist.strings */; };
+		AAC295BB2DA6233F00F3F8E8 /* ResultsWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295942DA6233F00F3F8E8 /* ResultsWindow.nib */; };
+		AAC295BC2DA6233F00F3F8E8 /* chisquare.png in Resources */ = {isa = PBXBuildFile; fileRef = AAC2958A2DA6233F00F3F8E8 /* chisquare.png */; };
+		AAC295BD2DA6233F00F3F8E8 /* WordListEditor~.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC2959A2DA6233F00F3F8E8 /* WordListEditor~.nib */; };
+		AAC295BE2DA6233F00F3F8E8 /* version.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAC295A92DA6233F00F3F8E8 /* version.plist */; };
+		AAC295BF2DA6233F00F3F8E8 /* ResultsWindow~.nib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295962DA6233F00F3F8E8 /* ResultsWindow~.nib */; };
+		AAC295C02DA6233F00F3F8E8 /* ChiSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2958C2DA6233F00F3F8E8 /* ChiSquare.m */; };
+		AAC295C12DA6233F00F3F8E8 /* WordListEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC295AB2DA6233F00F3F8E8 /* WordListEditor.m */; };
+		AAC295C22DA6233F00F3F8E8 /* WordTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC295AF2DA6233F00F3F8E8 /* WordTableView.m */; };
+		AAC295C32DA6233F00F3F8E8 /* Histogram.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2959F2DA6233F00F3F8E8 /* Histogram.m */; };
+		AAC295C42DA6233F00F3F8E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC295A12DA6233F00F3F8E8 /* main.m */; };
+		AAC295C52DA6233F00F3F8E8 /* Aliases.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC295832DA6233F00F3F8E8 /* Aliases.m */; };
+		AAC295C62DA6233F00F3F8E8 /* WordTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC295AD2DA6233F00F3F8E8 /* WordTableController.m */; };
+		AAC295C72DA6233F00F3F8E8 /* ResultsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC295A72DA6233F00F3F8E8 /* ResultsWindow.m */; };
+		AAC295C82DA6233F00F3F8E8 /* gamma.c in Sources */ = {isa = PBXBuildFile; fileRef = AAC2959D2DA6233F00F3F8E8 /* gamma.c */; };
+		AAC295C92DA6233F00F3F8E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC295852DA6233F00F3F8E8 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/QuisMain.nib; sourceTree = "<group>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		32CA4F630368D1EE00C91783 /* Quis_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quis_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* Quis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quis.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA28A419072C6AD2009D4E53 /* Aliases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aliases.h; sourceTree = "<group>"; };
-		AA28A41A072C6AD2009D4E53 /* Aliases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aliases.m; sourceTree = "<group>"; };
-		AA38B8EF072C1DA5003E4FBA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/WordListEditor.nib; sourceTree = "<group>"; };
-		AA3955770718DFC30008C8EA /* Histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Histogram.h; sourceTree = "<group>"; };
-		AA3955780718DFC30008C8EA /* Histogram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Histogram.m; sourceTree = "<group>"; };
-		AA3956650718F4490008C8EA /* AGRegex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGRegex.framework; sourceTree = "<group>"; };
-		AA4942EC0728980E0044BE05 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ResultsWindow.nib; sourceTree = "<group>"; };
-		AA494310072898990044BE05 /* ResultsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsWindow.h; sourceTree = "<group>"; };
-		AA494311072898990044BE05 /* ResultsWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsWindow.m; sourceTree = "<group>"; };
-		AA6BC5910721C16400589F95 /* WordTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTableController.h; sourceTree = "<group>"; };
-		AA6BC5920721C16400589F95 /* WordTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTableController.m; sourceTree = "<group>"; };
-		AA88F49C071CF64000157C71 /* Q.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Q.icns; sourceTree = SOURCE_ROOT; };
-		AA8AD466071D71AF00383E03 /* chisquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chisquare.png; sourceTree = SOURCE_ROOT; };
-		AA8DA8560741BEC300733DE3 /* WordTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTableView.h; sourceTree = "<group>"; };
-		AA8DA8570741BEC300733DE3 /* WordTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTableView.m; sourceTree = "<group>"; };
-		AA94BD3C071C0EF500570F02 /* gamma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gamma.h; sourceTree = "<group>"; };
-		AA94BD3D071C0EF500570F02 /* gamma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gamma.c; sourceTree = "<group>"; };
-		AA9FAADE071A3E5E008C6B53 /* ChiSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChiSquare.h; sourceTree = "<group>"; };
-		AA9FAADF071A3E5E008C6B53 /* ChiSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChiSquare.m; sourceTree = "<group>"; };
-		AACB6776072C20D800C4DEF6 /* WordListEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordListEditor.h; sourceTree = "<group>"; };
-		AACB6777072C20D800C4DEF6 /* WordListEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordListEditor.m; sourceTree = "<group>"; };
+		AAC2956F2DA621B100F3F8E8 /* Quis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC295822DA6233F00F3F8E8 /* Aliases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aliases.h; sourceTree = "<group>"; };
+		AAC295832DA6233F00F3F8E8 /* Aliases.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aliases.m; sourceTree = "<group>"; };
+		AAC295842DA6233F00F3F8E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAC295852DA6233F00F3F8E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAC295862DA6233F00F3F8E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAC295872DA6233F00F3F8E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MainMenu.xib; sourceTree = "<group>"; };
+		AAC2958A2DA6233F00F3F8E8 /* chisquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chisquare.png; sourceTree = "<group>"; };
+		AAC2958B2DA6233F00F3F8E8 /* ChiSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChiSquare.h; sourceTree = "<group>"; };
+		AAC2958C2DA6233F00F3F8E8 /* ChiSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChiSquare.m; sourceTree = "<group>"; };
+		AAC2958D2DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
+		AAC2958F2DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = QuisMain.nib; sourceTree = "<group>"; };
+		AAC295912DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = "QuisMain~.nib"; sourceTree = "<group>"; };
+		AAC295932DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = ResultsWindow.nib; sourceTree = "<group>"; };
+		AAC295952DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = "ResultsWindow~.nib"; sourceTree = "<group>"; };
+		AAC295972DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = WordListEditor.nib; sourceTree = "<group>"; };
+		AAC295992DA6233F00F3F8E8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = "WordListEditor~.nib"; sourceTree = "<group>"; };
+		AAC2959C2DA6233F00F3F8E8 /* gamma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamma.h; sourceTree = "<group>"; };
+		AAC2959D2DA6233F00F3F8E8 /* gamma.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gamma.c; sourceTree = "<group>"; };
+		AAC2959E2DA6233F00F3F8E8 /* Histogram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Histogram.h; sourceTree = "<group>"; };
+		AAC2959F2DA6233F00F3F8E8 /* Histogram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Histogram.m; sourceTree = "<group>"; };
+		AAC295A02DA6233F00F3F8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC295A12DA6233F00F3F8E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAC295A22DA6233F00F3F8E8 /* Q.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Q.icns; sourceTree = "<group>"; };
+		AAC295A32DA6233F00F3F8E8 /* Quis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quis.entitlements; sourceTree = "<group>"; };
+		AAC295A42DA6233F00F3F8E8 /* Quis.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Quis.xcodeproj; sourceTree = "<group>"; };
+		AAC295A52DA6233F00F3F8E8 /* Quis_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quis_Prefix.pch; sourceTree = "<group>"; };
+		AAC295A62DA6233F00F3F8E8 /* ResultsWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultsWindow.h; sourceTree = "<group>"; };
+		AAC295A72DA6233F00F3F8E8 /* ResultsWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultsWindow.m; sourceTree = "<group>"; };
+		AAC295A82DA6233F00F3F8E8 /* SampleWordList.stem */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleWordList.stem; sourceTree = "<group>"; };
+		AAC295A92DA6233F00F3F8E8 /* version.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = version.plist; sourceTree = "<group>"; };
+		AAC295AA2DA6233F00F3F8E8 /* WordListEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordListEditor.h; sourceTree = "<group>"; };
+		AAC295AB2DA6233F00F3F8E8 /* WordListEditor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordListEditor.m; sourceTree = "<group>"; };
+		AAC295AC2DA6233F00F3F8E8 /* WordTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordTableController.h; sourceTree = "<group>"; };
+		AAC295AD2DA6233F00F3F8E8 /* WordTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordTableController.m; sourceTree = "<group>"; };
+		AAC295AE2DA6233F00F3F8E8 /* WordTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordTableView.h; sourceTree = "<group>"; };
+		AAC295AF2DA6233F00F3F8E8 /* WordTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8D11072E0486CEB800E47090 /* Frameworks */ = {
+		AAC2956C2DA621B100F3F8E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
+		AAC295662DA621B100F3F8E8 = {
 			isa = PBXGroup;
 			children = (
-				AA28A419072C6AD2009D4E53 /* Aliases.h */,
-				AA28A41A072C6AD2009D4E53 /* Aliases.m */,
-				AA9FAADE071A3E5E008C6B53 /* ChiSquare.h */,
-				AA9FAADF071A3E5E008C6B53 /* ChiSquare.m */,
-				AA3955770718DFC30008C8EA /* Histogram.h */,
-				AA3955780718DFC30008C8EA /* Histogram.m */,
-				AA494310072898990044BE05 /* ResultsWindow.h */,
-				AA494311072898990044BE05 /* ResultsWindow.m */,
-				AACB6776072C20D800C4DEF6 /* WordListEditor.h */,
-				AACB6777072C20D800C4DEF6 /* WordListEditor.m */,
-				AA6BC5910721C16400589F95 /* WordTableController.h */,
-				AA6BC5920721C16400589F95 /* WordTableController.m */,
-				AA8DA8560741BEC300733DE3 /* WordTableView.h */,
-				AA8DA8570741BEC300733DE3 /* WordTableView.m */,
+				AAC295822DA6233F00F3F8E8 /* Aliases.h */,
+				AAC295832DA6233F00F3F8E8 /* Aliases.m */,
+				AAC295842DA6233F00F3F8E8 /* AppDelegate.h */,
+				AAC295852DA6233F00F3F8E8 /* AppDelegate.m */,
+				AAC295862DA6233F00F3F8E8 /* Assets.xcassets */,
+				AAC295892DA6233F00F3F8E8 /* Base.lproj */,
+				AAC2958A2DA6233F00F3F8E8 /* chisquare.png */,
+				AAC2958B2DA6233F00F3F8E8 /* ChiSquare.h */,
+				AAC2958C2DA6233F00F3F8E8 /* ChiSquare.m */,
+				AAC2959B2DA6233F00F3F8E8 /* English.lproj */,
+				AAC2959C2DA6233F00F3F8E8 /* gamma.h */,
+				AAC2959D2DA6233F00F3F8E8 /* gamma.c */,
+				AAC2959E2DA6233F00F3F8E8 /* Histogram.h */,
+				AAC2959F2DA6233F00F3F8E8 /* Histogram.m */,
+				AAC295A02DA6233F00F3F8E8 /* Info.plist */,
+				AAC295A12DA6233F00F3F8E8 /* main.m */,
+				AAC295A22DA6233F00F3F8E8 /* Q.icns */,
+				AAC295A32DA6233F00F3F8E8 /* Quis.entitlements */,
+				AAC295A42DA6233F00F3F8E8 /* Quis.xcodeproj */,
+				AAC295A52DA6233F00F3F8E8 /* Quis_Prefix.pch */,
+				AAC295A62DA6233F00F3F8E8 /* ResultsWindow.h */,
+				AAC295A72DA6233F00F3F8E8 /* ResultsWindow.m */,
+				AAC295A82DA6233F00F3F8E8 /* SampleWordList.stem */,
+				AAC295A92DA6233F00F3F8E8 /* version.plist */,
+				AAC295AA2DA6233F00F3F8E8 /* WordListEditor.h */,
+				AAC295AB2DA6233F00F3F8E8 /* WordListEditor.m */,
+				AAC295AC2DA6233F00F3F8E8 /* WordTableController.h */,
+				AAC295AD2DA6233F00F3F8E8 /* WordTableController.m */,
+				AAC295AE2DA6233F00F3F8E8 /* WordTableView.h */,
+				AAC295AF2DA6233F00F3F8E8 /* WordTableView.m */,
+				AAC295702DA621B100F3F8E8 /* Products */,
 			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
-		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+		AAC295702DA621B100F3F8E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-			);
-			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AA3956650718F4490008C8EA /* AGRegex.framework */,
-				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
-				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		19C28FACFE9D520D11CA2CBB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8D1107320486CEB800E47090 /* Quis.app */,
+				AAC2956F2DA621B100F3F8E8 /* Quis.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* Quis */ = {
+		AAC295892DA6233F00F3F8E8 /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				080E96DDFE201D6D7F000001 /* Classes */,
-				AA49447F0728F10B0044BE05 /* Numerical Recipes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
-				19C28FACFE9D520D11CA2CBB /* Products */,
+				AAC295882DA6233F00F3F8E8 /* MainMenu.xib */,
 			);
-			name = Quis;
+			path = Base.lproj;
 			sourceTree = "<group>";
 		};
-		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+		AAC2959B2DA6233F00F3F8E8 /* English.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* Quis_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				AAC2958E2DA6233F00F3F8E8 /* InfoPlist.strings */,
+				AAC295902DA6233F00F3F8E8 /* QuisMain.nib */,
+				AAC295922DA6233F00F3F8E8 /* QuisMain~.nib */,
+				AAC295942DA6233F00F3F8E8 /* ResultsWindow.nib */,
+				AAC295962DA6233F00F3F8E8 /* ResultsWindow~.nib */,
+				AAC295982DA6233F00F3F8E8 /* WordListEditor.nib */,
+				AAC2959A2DA6233F00F3F8E8 /* WordListEditor~.nib */,
 			);
-			name = "Other Sources";
+			path = English.lproj;
 			sourceTree = "<group>";
 		};
-		29B97317FDCFA39411CA2CEA /* Resources */ = {
+		AAC295B02DA6233F00F3F8E8 /* Products */ = {
 			isa = PBXGroup;
-			children = (
-				AA8AD466071D71AF00383E03 /* chisquare.png */,
-				AA88F49C071CF64000157C71 /* Q.icns */,
-				8D1107310486CEB800E47090 /* Info.plist */,
-				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* QuisMain.nib */,
-				AA4942EB0728980E0044BE05 /* ResultsWindow.nib */,
-				AA38B8EE072C1DA5003E4FBA /* WordListEditor.nib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
-				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AA49447F0728F10B0044BE05 /* Numerical Recipes */ = {
-			isa = PBXGroup;
-			children = (
-				AA94BD3C071C0EF500570F02 /* gamma.h */,
-				AA94BD3D071C0EF500570F02 /* gamma.c */,
-			);
-			name = "Numerical Recipes";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* Quis */ = {
+		AAC2956E2DA621B100F3F8E8 /* Quis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA7C2E0908587F4D00807105 /* Build configuration list for PBXNativeTarget "Quis" */;
+			buildConfigurationList = AAC2957F2DA621B200F3F8E8 /* Build configuration list for PBXNativeTarget "Quis" */;
 			buildPhases = (
-				8D1107290486CEB800E47090 /* Resources */,
-				8D11072C0486CEB800E47090 /* Sources */,
-				8D11072E0486CEB800E47090 /* Frameworks */,
+				AAC2956B2DA621B100F3F8E8 /* Sources */,
+				AAC2956C2DA621B100F3F8E8 /* Frameworks */,
+				AAC2956D2DA621B100F3F8E8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Quis;
-			productInstallPath = "$(HOME)/Applications";
+			packageProductDependencies = (
+			);
 			productName = Quis;
-			productReference = 8D1107320486CEB800E47090 /* Quis.app */;
+			productReference = AAC2956F2DA621B100F3F8E8 /* Quis.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		29B97313FDCFA39411CA2CEA /* Project object */ = {
+		AAC295672DA621B100F3F8E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
+				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					AAC2956E2DA621B100F3F8E8 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
 			};
-			buildConfigurationList = AA7C2E0D08587F4D00807105 /* Build configuration list for PBXProject "Quis" */;
-			compatibilityVersion = "Xcode 2.4";
+			buildConfigurationList = AAC2956A2DA621B100F3F8E8 /* Build configuration list for PBXProject "Quis" */;
 			developmentRegion = en;
-			hasScannedForEncodings = 1;
+			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 				English,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* Quis */;
+			mainGroup = AAC295662DA621B100F3F8E8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AAC295702DA621B100F3F8E8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AAC295B02DA6233F00F3F8E8 /* Products */;
+					ProjectRef = AAC295A42DA6233F00F3F8E8 /* Quis.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* Quis */,
+				AAC2956E2DA621B100F3F8E8 /* Quis */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8D1107290486CEB800E47090 /* Resources */ = {
+		AAC2956D2DA621B100F3F8E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* QuisMain.nib in Resources */,
-				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				AA3955790718DFC30008C8EA /* Histogram.h in Resources */,
-				AA9FAAE0071A3E5E008C6B53 /* ChiSquare.h in Resources */,
-				AA94BD3E071C0EF500570F02 /* gamma.h in Resources */,
-				AA88F49D071CF64000157C71 /* Q.icns in Resources */,
-				AA8AD467071D71AF00383E03 /* chisquare.png in Resources */,
-				AA6BC5930721C16400589F95 /* WordTableController.h in Resources */,
-				AA4942ED0728980E0044BE05 /* ResultsWindow.nib in Resources */,
-				AA494312072898990044BE05 /* ResultsWindow.h in Resources */,
-				AA38B8F0072C1DA5003E4FBA /* WordListEditor.nib in Resources */,
-				AACB6778072C20D800C4DEF6 /* WordListEditor.h in Resources */,
-				AA28A41B072C6AD2009D4E53 /* Aliases.h in Resources */,
-				AA8DA8580741BEC300733DE3 /* WordTableView.h in Resources */,
+				AAC295B22DA6233F00F3F8E8 /* SampleWordList.stem in Resources */,
+				AAC295B32DA6233F00F3F8E8 /* Assets.xcassets in Resources */,
+				AAC295B42DA6233F00F3F8E8 /* MainMenu.xib in Resources */,
+				AAC295B52DA6233F00F3F8E8 /* Info.plist in Resources */,
+				AAC295B62DA6233F00F3F8E8 /* Q.icns in Resources */,
+				AAC295B72DA6233F00F3F8E8 /* WordListEditor.nib in Resources */,
+				AAC295B82DA6233F00F3F8E8 /* QuisMain~.nib in Resources */,
+				AAC295B92DA6233F00F3F8E8 /* QuisMain.nib in Resources */,
+				AAC295BA2DA6233F00F3F8E8 /* InfoPlist.strings in Resources */,
+				AAC295BB2DA6233F00F3F8E8 /* ResultsWindow.nib in Resources */,
+				AAC295BC2DA6233F00F3F8E8 /* chisquare.png in Resources */,
+				AAC295BD2DA6233F00F3F8E8 /* WordListEditor~.nib in Resources */,
+				AAC295BE2DA6233F00F3F8E8 /* version.plist in Resources */,
+				AAC295BF2DA6233F00F3F8E8 /* ResultsWindow~.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8D11072C0486CEB800E47090 /* Sources */ = {
+		AAC2956B2DA621B100F3F8E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				AA39557A0718DFC30008C8EA /* Histogram.m in Sources */,
-				AA9FAAE1071A3E5E008C6B53 /* ChiSquare.m in Sources */,
-				AA94BD3F071C0EF500570F02 /* gamma.c in Sources */,
-				AA6BC5940721C16400589F95 /* WordTableController.m in Sources */,
-				AA494313072898990044BE05 /* ResultsWindow.m in Sources */,
-				AACB6779072C20D800C4DEF6 /* WordListEditor.m in Sources */,
-				AA28A41C072C6AD2009D4E53 /* Aliases.m in Sources */,
-				AA8DA8590741BEC300733DE3 /* WordTableView.m in Sources */,
+				AAC295C02DA6233F00F3F8E8 /* ChiSquare.m in Sources */,
+				AAC295C12DA6233F00F3F8E8 /* WordListEditor.m in Sources */,
+				AAC295C22DA6233F00F3F8E8 /* WordTableView.m in Sources */,
+				AAC295C32DA6233F00F3F8E8 /* Histogram.m in Sources */,
+				AAC295C42DA6233F00F3F8E8 /* main.m in Sources */,
+				AAC295C52DA6233F00F3F8E8 /* Aliases.m in Sources */,
+				AAC295C62DA6233F00F3F8E8 /* WordTableController.m in Sources */,
+				AAC295C72DA6233F00F3F8E8 /* ResultsWindow.m in Sources */,
+				AAC295C82DA6233F00F3F8E8 /* gamma.c in Sources */,
+				AAC295C92DA6233F00F3F8E8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+		AAC295882DA6233F00F3F8E8 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
+				AAC295872DA6233F00F3F8E8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AAC2958E2DA6233F00F3F8E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC2958D2DA6233F00F3F8E8 /* English */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		29B97318FDCFA39411CA2CEA /* QuisMain.nib */ = {
+		AAC295902DA6233F00F3F8E8 /* QuisMain.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
+				AAC2958F2DA6233F00F3F8E8 /* English */,
 			);
 			name = QuisMain.nib;
 			sourceTree = "<group>";
 		};
-		AA38B8EE072C1DA5003E4FBA /* WordListEditor.nib */ = {
+		AAC295922DA6233F00F3F8E8 /* QuisMain~.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AA38B8EF072C1DA5003E4FBA /* English */,
+				AAC295912DA6233F00F3F8E8 /* English */,
+			);
+			name = "QuisMain~.nib";
+			sourceTree = "<group>";
+		};
+		AAC295942DA6233F00F3F8E8 /* ResultsWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC295932DA6233F00F3F8E8 /* English */,
+			);
+			name = ResultsWindow.nib;
+			sourceTree = "<group>";
+		};
+		AAC295962DA6233F00F3F8E8 /* ResultsWindow~.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC295952DA6233F00F3F8E8 /* English */,
+			);
+			name = "ResultsWindow~.nib";
+			sourceTree = "<group>";
+		};
+		AAC295982DA6233F00F3F8E8 /* WordListEditor.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC295972DA6233F00F3F8E8 /* English */,
 			);
 			name = WordListEditor.nib;
 			sourceTree = "<group>";
 		};
-		AA4942EB0728980E0044BE05 /* ResultsWindow.nib */ = {
+		AAC2959A2DA6233F00F3F8E8 /* WordListEditor~.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AA4942EC0728980E0044BE05 /* English */,
+				AAC295992DA6233F00F3F8E8 /* English */,
 			);
-			name = ResultsWindow.nib;
-			sourceTree = SOURCE_ROOT;
+			name = "WordListEditor~.nib";
+			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AA7C2E0A08587F4D00807105 /* Debug */ = {
+		AAC2957D2DA621B200F3F8E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -339,17 +363,13 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = Q99P4GSPC6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				EXECUTABLE_NAME = Quis;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -363,25 +383,23 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@rpath";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dog-star.Quis";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		AA7C2E0B08587F4D00807105 /* Release */ = {
+		AAC2957E2DA621B200F3F8E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -407,17 +425,13 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Q99P4GSPC6;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_NAME = Quis;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -425,225 +439,90 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@rpath";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dog-star.Quis";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		AA7C2E0C08587F4D00807105 /* Default */ = {
+		AAC295802DA621B200F3F8E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Quis/Quis.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
-				DEAD_CODE_STRIPPING = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q99P4GSPC6;
-				EXECUTABLE_NAME = Quis;
-				FRAMEWORK_SEARCH_PATHS = "";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"/Users/chs/Documents/SJSU/History-230 - Frauds and Forgeries/Research/Stats/seneca/src/Quis\"";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Quis_Prefix.pch;
-				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dog-star.Quis";
-				PRODUCT_NAME = Quis;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				VERSIONING_SYSTEM = "apple-generic";
-				WRAPPER_EXTENSION = app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
-			name = Default;
+			name = Debug;
 		};
-		AA7C2E0E08587F4D00807105 /* Development */ = {
+		AAC295812DA621B200F3F8E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				DEAD_CODE_STRIPPING = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Info.plist;
-				ONLY_ACTIVE_ARCH = YES;
-			};
-			name = Development;
-		};
-		AA7C2E0F08587F4D00807105 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				DEAD_CODE_STRIPPING = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Info.plist;
-			};
-			name = Deployment;
-		};
-		AA7C2E1008587F4D00807105 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				DEAD_CODE_STRIPPING = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Info.plist;
-			};
-			name = Default;
-		};
-		AACBBCCB2DA57D350018C794 /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Quis/Quis.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q99P4GSPC6;
-				EXECUTABLE_NAME = Quis;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dog-star.Quis";
-				PRODUCT_NAME = Quis;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
-			name = Development;
-		};
-		AACBBCCC2DA57D350018C794 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = YES;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Q99P4GSPC6;
-				EXECUTABLE_NAME = Quis;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@rpath";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dog-star.Quis";
-				PRODUCT_NAME = Quis;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-			};
-			name = Deployment;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA7C2E0908587F4D00807105 /* Build configuration list for PBXNativeTarget "Quis" */ = {
+		AAC2956A2DA621B100F3F8E8 /* Build configuration list for PBXProject "Quis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA7C2E0A08587F4D00807105 /* Debug */,
-				AA7C2E0B08587F4D00807105 /* Release */,
-				AA7C2E0C08587F4D00807105 /* Default */,
-				AACBBCCB2DA57D350018C794 /* Development */,
-				AACBBCCC2DA57D350018C794 /* Deployment */,
+				AAC2957D2DA621B200F3F8E8 /* Debug */,
+				AAC2957E2DA621B200F3F8E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
-		AA7C2E0D08587F4D00807105 /* Build configuration list for PBXProject "Quis" */ = {
+		AAC2957F2DA621B200F3F8E8 /* Build configuration list for PBXNativeTarget "Quis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA7C2E0E08587F4D00807105 /* Development */,
-				AA7C2E0F08587F4D00807105 /* Deployment */,
-				AA7C2E1008587F4D00807105 /* Default */,
+				AAC295802DA621B200F3F8E8 /* Debug */,
+				AAC295812DA621B200F3F8E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+	rootObject = AAC295672DA621B100F3F8E8 /* Project object */;
 }

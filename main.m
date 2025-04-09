@@ -2,13 +2,14 @@
 //  main.m
 //  Quis
 //
-//  Created by Craig Schamp on 10/7/04.
-//  Copyright Craig Schamp 2004. All rights reserved.
+//  Created by Craig Schamp on 4/8/25.
 //
 
 #import <Cocoa/Cocoa.h>
 
-int main(int argc, char *argv[])
-{
-    return NSApplicationMain(argc,  (const char **) argv);
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        // Setup code that might create autoreleased objects goes here.
+    }
+    return NSApplicationMain(argc, argv);
 }
