@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA52B25C2DA6CDB500CFFAD8 /* WordListEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA52B2582DA6CDB500CFFAD8 /* WordListEditor.xib */; };
+		AA52B25D2DA6CDB500CFFAD8 /* ResultsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA52B2572DA6CDB500CFFAD8 /* ResultsWindow.xib */; };
+		AA52B25E2DA6CDB500CFFAD8 /* QuisMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA52B2562DA6CDB500CFFAD8 /* QuisMain.xib */; };
 		AAC295B22DA6233F00F3F8E8 /* SampleWordList.stem in Resources */ = {isa = PBXBuildFile; fileRef = AAC295A82DA6233F00F3F8E8 /* SampleWordList.stem */; };
 		AAC295B32DA6233F00F3F8E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC295862DA6233F00F3F8E8 /* Assets.xcassets */; };
 		AAC295B42DA6233F00F3F8E8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC295882DA6233F00F3F8E8 /* MainMenu.xib */; };
@@ -34,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA52B2592DA6CDB500CFFAD8 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = ResultsWindow.xib; sourceTree = "<group>"; };
+		AA52B25A2DA6CDB500CFFAD8 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = QuisMain.xib; sourceTree = "<group>"; };
+		AA52B25B2DA6CDB500CFFAD8 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = WordListEditor.xib; sourceTree = "<group>"; };
 		AAC2956F2DA621B100F3F8E8 /* Quis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC295822DA6233F00F3F8E8 /* Aliases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aliases.h; sourceTree = "<group>"; };
 		AAC295832DA6233F00F3F8E8 /* Aliases.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aliases.m; sourceTree = "<group>"; };
@@ -140,6 +146,9 @@
 		AAC2959B2DA6233F00F3F8E8 /* English.lproj */ = {
 			isa = PBXGroup;
 			children = (
+				AA52B2562DA6CDB500CFFAD8 /* QuisMain.xib */,
+				AA52B2572DA6CDB500CFFAD8 /* ResultsWindow.xib */,
+				AA52B2582DA6CDB500CFFAD8 /* WordListEditor.xib */,
 				AAC2958E2DA6233F00F3F8E8 /* InfoPlist.strings */,
 				AAC295902DA6233F00F3F8E8 /* QuisMain.nib */,
 				AAC295922DA6233F00F3F8E8 /* QuisMain~.nib */,
@@ -232,6 +241,9 @@
 				AAC295B82DA6233F00F3F8E8 /* QuisMain~.nib in Resources */,
 				AAC295B92DA6233F00F3F8E8 /* QuisMain.nib in Resources */,
 				AAC295BA2DA6233F00F3F8E8 /* InfoPlist.strings in Resources */,
+				AA52B25C2DA6CDB500CFFAD8 /* WordListEditor.xib in Resources */,
+				AA52B25D2DA6CDB500CFFAD8 /* ResultsWindow.xib in Resources */,
+				AA52B25E2DA6CDB500CFFAD8 /* QuisMain.xib in Resources */,
 				AAC295BB2DA6233F00F3F8E8 /* ResultsWindow.nib in Resources */,
 				AAC295BC2DA6233F00F3F8E8 /* chisquare.png in Resources */,
 				AAC295BD2DA6233F00F3F8E8 /* WordListEditor~.nib in Resources */,
@@ -263,6 +275,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		AA52B2562DA6CDB500CFFAD8 /* QuisMain.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA52B25A2DA6CDB500CFFAD8 /* English */,
+			);
+			name = QuisMain.xib;
+			sourceTree = "<group>";
+		};
+		AA52B2572DA6CDB500CFFAD8 /* ResultsWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA52B2592DA6CDB500CFFAD8 /* English */,
+			);
+			name = ResultsWindow.xib;
+			sourceTree = "<group>";
+		};
+		AA52B2582DA6CDB500CFFAD8 /* WordListEditor.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA52B25B2DA6CDB500CFFAD8 /* English */,
+			);
+			name = WordListEditor.xib;
+			sourceTree = "<group>";
+		};
 		AAC295882DA6233F00F3F8E8 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
