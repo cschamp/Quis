@@ -96,9 +96,9 @@
 				AAC2958A2DA6233F00F3F8E8 /* chisquare.png */,
 				AAC2958B2DA6233F00F3F8E8 /* ChiSquare.h */,
 				AAC2958C2DA6233F00F3F8E8 /* ChiSquare.m */,
-				AAC2959B2DA6233F00F3F8E8 /* English.lproj */,
 				AAC2959C2DA6233F00F3F8E8 /* gamma.h */,
 				AAC2959D2DA6233F00F3F8E8 /* gamma.c */,
+				AAC2959B2DA6233F00F3F8E8 /* English.lproj */,
 				AAC2959E2DA6233F00F3F8E8 /* Histogram.h */,
 				AAC2959F2DA6233F00F3F8E8 /* Histogram.m */,
 				AAC295A02DA6233F00F3F8E8 /* Info.plist */,
@@ -452,7 +452,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Quis/Quis.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Quis.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -470,6 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dog-star.Quis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
+				STUPID_XCODE_UI = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Debug;
@@ -479,7 +481,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Quis/Quis.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Quis.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -497,6 +500,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dog-star.Quis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
+				STUPID_XCODE_UI = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
