@@ -46,7 +46,7 @@
 	<key>CFBundleVersion</key>
 	<string>2.0.0</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2024 Craig Schamp. All rights reserved.</string>
+	<string>Copyright © 2004, 2025 Craig Schamp. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>QuisMain</string>
 	<key>NSPrincipalClass</key>
