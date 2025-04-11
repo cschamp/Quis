@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set Xcode Version
-        run: sudo xcode-select --switch /Applications/Xcode_15.app/Contents/Developer
+        run: sudo xcode-select --switch /Applications/Xcode_14.3.app/Contents/Developer
       - name: Set Default Scheme
         run: |
           scheme_list=$(xcodebuild -list -json | tr -d "\n")
