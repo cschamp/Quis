@@ -63,6 +63,14 @@
 		AAC295AF2DA6233F00F3F8E8 /* WordTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AA52B26A2DAADA8800CFFAD8 /* .github */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = .github;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		AAC2956C2DA621B100F3F8E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -106,6 +114,7 @@
 				AAC295AD2DA6233F00F3F8E8 /* WordTableController.m */,
 				AAC295AE2DA6233F00F3F8E8 /* WordTableView.h */,
 				AAC295AF2DA6233F00F3F8E8 /* WordTableView.m */,
+				AA52B26A2DAADA8800CFFAD8 /* .github */,
 				AAC295702DA621B100F3F8E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,6 +156,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AA52B26A2DAADA8800CFFAD8 /* .github */,
 			);
 			name = Quis;
 			packageProductDependencies = (
