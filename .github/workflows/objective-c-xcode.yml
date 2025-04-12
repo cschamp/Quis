@@ -26,10 +26,22 @@ jobs:
         env:
           scheme: Quis
         run: |
-          if [ $scheme = default ]; then scheme=$(cat default); fi
-          xcodebuild -list -json | grep -q "\"$scheme\"" || { echo "Scheme $scheme not found in the project/workspace"; exit 1; }
-          if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
-          file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
-          if [ -z "$file_to_build" ]; then echo "No .xcworkspace or .xcodeproj file found in the repository root"; exit 1; fi
-          destination=$(xcodebuild -showdestinations -scheme "$scheme" | grep 'platform:macOS' | head -n 1 | grep -o 'id:.*' | cut -d':' -f2 | tr -d ' ')
-          xcodebuild clean build analyze -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "id=$destination" | xcpretty && exit ${PIPESTATUS[0]}
+          scheme="Quis"
+          file_to_build=$(ls -1 *.xcodeproj | head -n1)
+          if [ -z "$file_to_build" ]; then
+            echo "❌ No .xcodeproj file found"
+            exit 1
+          fi
+
+          destination=$(xcodebuild -showdestinations -project "$file_to_build" -scheme "$scheme" 2>/dev/null | \
+            awk '/platform: macOS/ && /id:/{print $NF; exit}' | tr -d ' ')
+          if [ -z "$destination" ]; then
+            echo "❌ Could not determine a valid macOS destination"
+            exit 1
+          fi
+
+          xcodebuild clean build analyze \
+            -project "$file_to_build" \
+            -scheme "$scheme" \
+            -destination "id=$destination" | xcpretty
+          exit ${PIPESTATUS[0]}
