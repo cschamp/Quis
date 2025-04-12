@@ -27,13 +27,21 @@ jobs:
           scheme: Quis
         run: |
           scheme="Quis"
-          file_to_build=$(ls -1 *.xcodeproj | head -n1)
+
+          if [ -f *.xcworkspace ]; then
+            file_to_build=$(ls -1 *.xcworkspace | head -n1)
+            filetype_param="-workspace"
+          else
+            file_to_build=$(ls -1 *.xcodeproj | head -n1)
+            filetype_param="-project"
+          fi
+
           if [ -z "$file_to_build" ]; then
-            echo "❌ No .xcodeproj file found"
+            echo "❌ No .xcodeproj or .xcworkspace file found"
             exit 1
           fi
 
-          destination=$(xcodebuild -showdestinations -project "$file_to_build" -scheme "$scheme" 2>/dev/null | \
+          destination=$(xcodebuild -showdestinations $filetype_param "$file_to_build" -scheme "$scheme" 2>/dev/null | \
             awk '/platform: macOS/ && /id:/{print $NF; exit}' | tr -d ' ')
           if [ -z "$destination" ]; then
             echo "❌ Could not determine a valid macOS destination"
@@ -41,7 +49,7 @@ jobs:
           fi
 
           xcodebuild clean build analyze \
-            -project "$file_to_build" \
+            $filetype_param "$file_to_build" \
             -scheme "$scheme" \
             -destination "id=$destination" | xcpretty
           exit ${PIPESTATUS[0]}
