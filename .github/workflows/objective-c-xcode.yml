@@ -24,7 +24,7 @@ jobs:
           echo Using default scheme: $default
       - name: Build
         env:
-          scheme: ${{ 'default' }}
+          scheme: Quis
         run: |
           if [ $scheme = default ]; then scheme=$(cat default); fi
           xcodebuild -list -json | grep -q "\"$scheme\"" || { echo "Scheme $scheme not found in the project/workspace"; exit 1; }
