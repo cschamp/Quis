@@ -44,8 +44,8 @@ jobs:
           destination=$(xcodebuild -showdestinations $filetype_param "$file_to_build" -scheme "$scheme" 2>/dev/null | \
             awk '/platform: macOS/ && /id:/{print $NF; exit}' | tr -d ' ')
           if [ -z "$destination" ]; then
-            echo "❌ Could not determine a valid macOS destination"
-            exit 1
+            echo "⚠️ No valid macOS destination found, using fallback destination."
+            destination="generic/platform=macOS"
           fi
 
           xcodebuild clean build analyze \
