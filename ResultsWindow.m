@@ -26,6 +26,19 @@
     return self;
 }
 
++ (void)load {
+    NSLog(@"ResultsWindow class was loaded");
+}
+
+- (instancetype)initWithType:(NSString *)typeName error:(NSError **)outError {
+    NSLog(@"initWithType:error: called");
+    self = [super init];
+    if (self) {
+        // You can set up defaults here if needed
+    }
+    return self;
+}
+
 #pragma mark NSDocument
 
 - (NSString *)windowNibName {
@@ -41,6 +54,11 @@
 - (BOOL)loadDataRepresentation:(NSData *)data ofType:(NSString *)type {
     // Implement to load a persistent data representation of your document OR remove this and implement the file-wrapper or file path based load methods.
     return YES;
+}
+
+- (void)makeWindowControllers {
+    NSLog(@"makeWindowControllers called");
+    [self addWindowController:[[NSWindowController alloc] initWithWindowNibName:self.windowNibName]];
 }
 
 #pragma mark Input File Selection Actions

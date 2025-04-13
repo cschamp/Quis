@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ResultsWindow.h"
 
 @interface AppDelegate ()
 
@@ -15,12 +16,13 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification {
-    BOOL success = [[NSBundle mainBundle] loadNibNamed:@"QuisMain" owner:NSApp topLevelObjects:nil];
-    if (!success) {
-        NSLog(@"Failed to load QuisMain.xib");
-    } else {
-        NSLog(@"Successfully loaded QuisMain.xib");
-    }
+    // Load the menu bar from QuisMain.xib
+    [[NSBundle mainBundle] loadNibNamed:@"QuisMain" owner:NSApp topLevelObjects:nil];
+
+    // Manually instantiate and show the ResultsWindow
+    ResultsWindow *results = [[ResultsWindow alloc] init];
+    [results makeWindowControllers];
+    [[results windowControllers][0] showWindow:self];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

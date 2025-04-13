@@ -37,7 +37,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn width="411" minWidth="16" maxWidth="1000" id="7">
+                                        <tableColumn width="382" minWidth="16" maxWidth="1000" id="7">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,7 +93,7 @@ Gw
 </string>
                         </buttonCell>
                     </button>
-                    <textField autoresizesSubviews="NO" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13">
+                    <textField autoresizesSubviews="NO" focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13">
                         <rect key="frame" x="17" y="429" width="441" height="37"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="System Font Text" id="22">
