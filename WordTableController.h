@@ -11,7 +11,7 @@
 #import <Cocoa/Cocoa.h>
 #import "Histogram.h"
 
-@interface WordTableController : NSObject {
+@interface WordTableController : NSObject <NSTableViewDataSource, NSTableViewDelegate> {
 	IBOutlet NSTableView *wordTable;
 	Histogram *_histogram;
 }

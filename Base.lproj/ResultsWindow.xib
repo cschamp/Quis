@@ -390,7 +390,7 @@ DQ
         </window>
         <customObject id="82" userLabel="WordTableController" customClass="WordTableController">
             <connections>
-                <outlet property="wordTable" destination="31" id="83"/>
+                <outlet property="wordTable" destination="31" id="lv7-p2-y0w"/>
             </connections>
         </customObject>
     </objects>

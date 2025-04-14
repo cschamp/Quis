@@ -27,11 +27,25 @@
         return 0;
 }
 
+- (void)awakeFromNib {
+    // Configure the table view and its columns for proper dark mode support
+    for (NSTableColumn *column in [wordTable tableColumns]) {
+        NSTextFieldCell *cell = [column dataCell];
+        // Set the cell to use the label color which automatically adapts to dark/light mode
+        [cell setTextColor:[NSColor labelColor]];
+    }
+    
+    // Set the table view's background color
+    [wordTable setBackgroundColor:[NSColor controlBackgroundColor]];
+    
+    // Set the table view's delegate
+    [wordTable setDelegate:self];
+}
+
 - (id)tableView:(NSTableView *)tableView
         objectValueForTableColumn:(NSTableColumn *)tableColumn
         row:(int)row
 {
-    NSLog(@"objectValueForTableColumn called for row %d", row);
     int column = [[tableColumn identifier] intValue];
     NSString *result = nil;
     NSString *word = [[_histogram wordList] objectAtIndex:row];
@@ -49,6 +63,16 @@
             break;
     }
     return result;
+}
+
+// Add this method to handle text color in both selected and unselected states
+- (void)tableView:(NSTableView *)tableView willDisplayCell:(id)cell forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    NSTextFieldCell *textCell = (NSTextFieldCell *)cell;
+    if ([tableView isRowSelected:row]) {
+        [textCell setTextColor:[NSColor selectedTextColor]];
+    } else {
+        [textCell setTextColor:[NSColor labelColor]];
+    }
 }
 
 - (BOOL)tableView:(NSTableView *)tableView writeRows:(NSArray *)rows toPasteboard:(NSPasteboard *)pboard
