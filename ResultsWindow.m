@@ -30,10 +30,18 @@
     NSLog(@"ResultsWindow class was loaded");
 }
 
+- (void)awakeFromNib {
+    NSLog(@"ResultsWindow awakeFromNib");
+    
+    [[self window] setDelegate:self];
+}
+
 #pragma mark Input File Selection Actions
 
 - (IBAction)selectCorpus:(id)sender
 {
+    NSLog(@"selectCorpus: was called");
+    
     _corpusFileList = [self chooseInputFiles];
     NSMutableString *string = [[NSMutableString alloc] init];
 
@@ -47,6 +55,8 @@
 
 - (IBAction)selectSuspect:(id)sender
 {
+    NSLog(@"selectSuspect: was called");
+
     _suspectFileList = [self chooseInputFiles];
     NSMutableString *string = [[NSMutableString alloc] init];
 
