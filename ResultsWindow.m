@@ -30,37 +30,6 @@
     NSLog(@"ResultsWindow class was loaded");
 }
 
-- (instancetype)initWithType:(NSString *)typeName error:(NSError **)outError {
-    NSLog(@"initWithType:error: called");
-    self = [super init];
-    if (self) {
-        // You can set up defaults here if needed
-    }
-    return self;
-}
-
-#pragma mark NSDocument
-
-- (NSString *)windowNibName {
-    // Implement this to return a nib to load OR implement -makeWindowControllers to manually create your controllers.
-    return @"ResultsWindow";
-}
-
-- (NSData *)dataRepresentationOfType:(NSString *)type {
-    // Implement to provide a persistent data representation of your document OR remove this and implement the file-wrapper or file path based save methods.
-    return nil;
-}
-
-- (BOOL)loadDataRepresentation:(NSData *)data ofType:(NSString *)type {
-    // Implement to load a persistent data representation of your document OR remove this and implement the file-wrapper or file path based load methods.
-    return YES;
-}
-
-- (void)makeWindowControllers {
-    NSLog(@"makeWindowControllers called");
-    [self addWindowController:[[NSWindowController alloc] initWithWindowNibName:self.windowNibName]];
-}
-
 #pragma mark Input File Selection Actions
 
 - (IBAction)selectCorpus:(id)sender

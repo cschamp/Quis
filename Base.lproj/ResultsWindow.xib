@@ -8,19 +8,19 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ResultsWindow">
             <connections>
-                <outlet property="activityIndicator" destination="5" id="TyC-V0-Dhg"/>
-                <outlet property="compressionButton" destination="43" id="ger-kA-sGY"/>
-                <outlet property="conflationButton" destination="80" id="XzQ-OU-T50"/>
-                <outlet property="corpusFile" destination="16" id="ahh-TR-YH5"/>
-                <outlet property="degreesField" destination="12" id="wBZ-05-Y46"/>
-                <outlet property="probabilityField" destination="50" id="XMm-JE-rMH"/>
-                <outlet property="runButton" destination="15" id="OYL-Xj-WVe"/>
-                <outlet property="summaryTextField" destination="10" id="gEM-MS-swv"/>
-                <outlet property="suspectFile" destination="7" id="hB9-gN-03l"/>
-                <outlet property="window" destination="21" id="P03-ET-uMl"/>
-                <outlet property="wordStemmingButton" destination="86" id="rKi-Hi-KOu"/>
-                <outlet property="wordTableController" destination="82" id="gsM-fj-mCn"/>
-                <outlet property="x2Field" destination="24" id="Jon-oH-E9V"/>
+                <outlet property="activityIndicator" destination="5" id="IiR-pW-3Cl"/>
+                <outlet property="compressionButton" destination="43" id="Ukw-lJ-jWB"/>
+                <outlet property="conflationButton" destination="80" id="oYs-6G-olE"/>
+                <outlet property="corpusFile" destination="16" id="NXK-Uw-VEc"/>
+                <outlet property="degreesField" destination="12" id="5Ur-HQ-Mtb"/>
+                <outlet property="probabilityField" destination="50" id="KL3-B4-J5B"/>
+                <outlet property="runButton" destination="15" id="MJL-mi-uQh"/>
+                <outlet property="summaryTextField" destination="10" id="fVP-CI-1e7"/>
+                <outlet property="suspectFile" destination="7" id="Vjm-wI-HVR"/>
+                <outlet property="window" destination="21" id="KiJ-f8-747"/>
+                <outlet property="wordStemmingButton" destination="86" id="Mzy-c0-adn"/>
+                <outlet property="wordTableController" destination="82" id="zKP-gZ-zc3"/>
+                <outlet property="x2Field" destination="24" id="1uk-nd-Vho"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -45,7 +45,7 @@ DQ
 </string>
                         </buttonCell>
                         <connections>
-                            <action selector="runButtonAction:" target="-2" id="jzk-3b-MP3"/>
+                            <action selector="runButtonAction:" target="-2" id="zMa-of-Yya"/>
                         </connections>
                     </button>
                     <button autoresizesSubviews="NO" imageHugsTitle="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="45">
@@ -200,7 +200,7 @@ DQ
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
                                     <connections>
-                                        <action selector="selectCorpus:" target="-2" id="XZa-RM-uan"/>
+                                        <action selector="selectCorpus:" target="-2" id="Ra4-MH-gVO"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -239,7 +239,7 @@ DQ
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
                                     <connections>
-                                        <action selector="selectSuspect:" target="-2" id="xb2-5r-Dwk"/>
+                                        <action selector="selectSuspect:" target="-2" id="Nef-2b-fRb"/>
                                     </connections>
                                 </button>
                             </subviews>

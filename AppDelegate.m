@@ -15,24 +15,13 @@
 
 @implementation AppDelegate
 
+#import "ResultsWindow.h"
+
 - (void)applicationDidFinishLaunching:(NSNotification *)notification {
-    // Load the menu bar from QuisMain.xib
     [[NSBundle mainBundle] loadNibNamed:@"QuisMain" owner:NSApp topLevelObjects:nil];
 
-    // Manually instantiate and show the ResultsWindow
-    ResultsWindow *results = [[ResultsWindow alloc] init];
-    [results makeWindowControllers];
-    [[results windowControllers][0] showWindow:self];
+    ResultsWindow *results = [[ResultsWindow alloc] initWithWindowNibName:@"ResultsWindow"];
+    [results showWindow:self];
 }
-
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
-}
-
-
-- (BOOL)applicationSupportsSecureRestorableState:(NSApplication *)app {
-    return YES;
-}
-
 
 @end

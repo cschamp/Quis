@@ -12,7 +12,7 @@
 #import "WordTableController.h"
 #import "Aliases.h"
 
-@interface ResultsWindow : NSDocument {
+@interface ResultsWindow : NSWindowController {
     IBOutlet NSButton *runButton;
     IBOutlet NSTextField *corpusFile;
 	IBOutlet NSTextField *suspectFile;
