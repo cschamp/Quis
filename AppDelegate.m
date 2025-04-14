@@ -11,6 +11,7 @@
 @interface AppDelegate ()
 
 @property (strong) IBOutlet NSWindow *window;
+@property (strong) ResultsWindow *resultsWindow;
 @end
 
 @implementation AppDelegate
@@ -20,8 +21,10 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)notification {
     [[NSBundle mainBundle] loadNibNamed:@"QuisMain" owner:NSApp topLevelObjects:nil];
 
-    ResultsWindow *results = [[ResultsWindow alloc] initWithWindowNibName:@"ResultsWindow"];
-    [results showWindow:self];
+    self.resultsWindow = [[ResultsWindow alloc] initWithWindowNibName:@"ResultsWindow"];
+    NSLog(@"Created ResultsWindow controller: %@", self.resultsWindow);
+    NSLog(@"ResultsWindow's window: %@", [self.resultsWindow window]);
+    [self.resultsWindow showWindow:self];
 }
 
 @end

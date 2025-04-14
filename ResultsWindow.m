@@ -15,23 +15,38 @@
 
 @implementation ResultsWindow
 
-- (id)init
+- (id)initWithWindowNibName:(NSString *)windowNibName
 {
-    self = [super init];
+    NSLog(@"ResultsWindow initWithWindowNibName: %@", windowNibName);
+    self = [super initWithWindowNibName:windowNibName];
     if (self) {
         _corpusFileList = nil;
         _suspectFileList = nil;
         _aliases = nil;
+        NSLog(@"ResultsWindow initialized: %@", self);
     }
     return self;
 }
 
-+ (void)load {
-    NSLog(@"ResultsWindow class was loaded");
+- (void)windowDidLoad {
+    [super windowDidLoad];
+    NSLog(@"ResultsWindow windowDidLoad");
+    NSLog(@"Window: %@", [self window]);
 }
 
 - (void)awakeFromNib {
     NSLog(@"ResultsWindow awakeFromNib");
+    
+    // Add more detailed debug logging
+    NSLog(@"self: %@", self);
+    NSLog(@"window: %@", [self window]);
+    NSLog(@"runButton: %@ (enabled: %d)", runButton, [runButton isEnabled]);
+    NSLog(@"corpusFile: %@", corpusFile);
+    NSLog(@"suspectFile: %@", suspectFile);
+    
+    // Test if buttons can receive actions
+    NSLog(@"Run button action: %@", NSStringFromSelector([runButton action]));
+    NSLog(@"Run button target: %@", [runButton target]);
     
     [[self window] setDelegate:self];
 }
@@ -45,10 +60,11 @@
     _corpusFileList = [self chooseInputFiles];
     NSMutableString *string = [[NSMutableString alloc] init];
 
-    [string setString:[[_corpusFileList objectAtIndex:0] lastPathComponent]];
-    unsigned int i;
-    for (i = 1; i < [_corpusFileList count]; i++) {
-        [string appendFormat:@", %@", [[_corpusFileList objectAtIndex:i] lastPathComponent]];
+    if ([_corpusFileList count] > 0) {
+        [string setString:[[_corpusFileList objectAtIndex:0] lastPathComponent]];
+        for (unsigned int i = 1; i < [_corpusFileList count]; i++) {
+            [string appendFormat:@", %@", [[_corpusFileList objectAtIndex:i] lastPathComponent]];
+        }
     }
     [corpusFile setStringValue:string];
 }
@@ -60,10 +76,11 @@
     _suspectFileList = [self chooseInputFiles];
     NSMutableString *string = [[NSMutableString alloc] init];
 
-    [string setString:[[_suspectFileList objectAtIndex:0] lastPathComponent]];
-    unsigned int i;
-    for (i = 1; i < [_suspectFileList count]; i++) {
-        [string appendFormat:@", %@", [[_suspectFileList objectAtIndex:i] lastPathComponent]];
+    if ([_suspectFileList count] > 0) {
+        [string setString:[[_suspectFileList objectAtIndex:0] lastPathComponent]];
+        for (unsigned int i = 1; i < [_suspectFileList count]; i++) {
+            [string appendFormat:@", %@", [[_suspectFileList objectAtIndex:i] lastPathComponent]];
+        }
     }
     [suspectFile setStringValue:string];
 }
@@ -76,8 +93,12 @@
     [op setCanChooseDirectories:NO];
     [op setCanChooseFiles:YES];
     [op setResolvesAliases:YES];
-    [op runModalForDirectory:nil file:nil types:nil];
-    return [op filenames];
+    NSInteger result = [op runModal];
+    
+    if (result == NSModalResponseOK) {
+        return [op filenames];
+    }
+    return @[]; // Return empty array if cancelled
 }
 
 #pragma mark Run Analysis Actions
@@ -89,30 +110,42 @@
 
 - (void)runAnalysisInThread:(id)sender
 {
-    [runButton setEnabled:NO];
-    [activityIndicator startAnimation:self];
+    // Capture UI states on main thread before starting background work
+    __block BOOL conflationOption;
+    __block BOOL compressionOption;
     
-    BOOL conflationOption = ([conflationButton state] == NSOffState) ? NO : YES;
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        [self->runButton setEnabled:NO];
+        [self->activityIndicator startAnimation:self];
+        
+        // Get button states while on main thread
+        conflationOption = ([self->conflationButton state] == NSOffState) ? NO : YES;
+        compressionOption = ([self->compressionButton state] == NSOffState) ? NO : YES;
+    });
+    
+    // Do the computation work in background
     Histogram *R = [[Histogram alloc] init];
     [R histogramFromFileList:_corpusFileList withConflation:conflationOption];
     Histogram *S = [[Histogram alloc] init];
     [S histogramFromFileList:_suspectFileList withConflation:conflationOption];
 
     ChiSquare *test = [[ChiSquare alloc] initWithSet:S andSet:R];
-    BOOL compressionOption = ([compressionButton state] == NSOffState) ? NO : YES;
     [test calculateWithOptions:compressionOption];
 
-    // display results of test
-    [x2Field setDoubleValue:[test value]];
-    [degreesField setIntValue:[test degreesOfFreedom]];
-    [probabilityField setDoubleValue:[test probability]];
+    // Dispatch all UI updates back to the main thread
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // display results of test
+        [self->x2Field setDoubleValue:[test value]];
+        [self->degreesField setIntValue:[test degreesOfFreedom]];
+        [self->probabilityField setDoubleValue:[test probability]];
 
-    [wordTableController setHistogram:R];
-    
-    [summaryTextField setStringValue:[R summary]];
+        [self->wordTableController setHistogram:R];
+        
+        [self->summaryTextField setStringValue:[R summary]];
 
-    [activityIndicator stopAnimation:self];
-    [runButton setEnabled:YES];
+        [self->activityIndicator stopAnimation:self];
+        [self->runButton setEnabled:YES];
+    });
 }
 
 @end

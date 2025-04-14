@@ -20,6 +20,7 @@
 
 - (NSUInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
+    NSLog(@"numberOfRowsInTableView called, histogram: %@, count: %lu", _histogram, (unsigned long)[_histogram count]);
     if (_histogram)
         return [_histogram count];
     else
@@ -30,6 +31,7 @@
         objectValueForTableColumn:(NSTableColumn *)tableColumn
         row:(int)row
 {
+    NSLog(@"objectValueForTableColumn called for row %d", row);
     int column = [[tableColumn identifier] intValue];
     NSString *result = nil;
     NSString *word = [[_histogram wordList] objectAtIndex:row];
@@ -68,8 +70,10 @@
 
 - (void)setHistogram:(Histogram *)histogram
 {
-    self.histogram = histogram;
+    NSLog(@"setHistogram called with histogram: %@", histogram);
+    _histogram = histogram;
     [wordTable noteNumberOfRowsChanged];
+    [wordTable reloadData];
 }
 
 @end
